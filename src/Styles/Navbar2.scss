@@ -1,0 +1,21 @@
+.navbar_two{
+    background-image: linear-gradient(rgb(112, 109, 109), white);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: centre;
+    justify-content: space-between;
+    >div{
+        margin: 0.5rem;
+        padding: 0.2rem;
+        >img{
+            width: 100%;
+            height: 40%;
+            margin-top: 10px;
+            padding: 5px;
+        }
+    }
+
+   
+
+}
