@@ -5,14 +5,23 @@ import './Styles/App.scss';
 import './Styles/Navbar.scss';
 import './Styles/Navbar2.scss';
 import './Styles/Home.scss';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Product from "./components/Product";
 
 function App() {
   return (
-    <>
-    <Navbar/>
-    <Navbar2/>
-    <Home/>
-    </>
+    <Router>
+      <Navbar/>
+      <Navbar2/>
+      
+      <Routes>
+          <Route path="/product" element={<Product/>}/>
+          <Route path="/" element={<Home/>}/>
+      </Routes>
+      
+    </Router>
+    
+    
    
   );
 }

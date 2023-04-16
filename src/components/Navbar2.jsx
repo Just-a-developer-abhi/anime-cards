@@ -9,37 +9,60 @@ import navlogo7 from '../assets/mastlogo/mha.png'
 import navlogo8 from '../assets/mastlogo/op.png'
 import navlogo9 from '../assets/mastlogo/opm.png'
 import navlogo10 from '../assets/mastlogo/vs2.png'
+import { Link } from 'react-router-dom'
 
 
 const Navbar2 = () => {
   return (
     <nav className='navbar_two'>
         <div>
-            <img src={navlogo1} alt="" />
+            <Link className='link' to={"/product"}>
+                <img src={navlogo1} alt="" />
+            </Link>
         </div>
         <div>
-            <img src={navlogo2} alt="" />
+            <Link className='link' to={"/product"}>
+                <img src={navlogo2} alt="" />
+            </Link>
         </div>
         <div>
-            <img src={navlogo3} alt="" />
+            <Link className='link' to={"/product"}>
+                <img src={navlogo3} alt="" />
+            </Link>
+            
         </div>
         <div>
-            <img src={navlogo4} alt="" />
+            <Link className='link' to={"/product"}>
+                <img src={navlogo4} alt="" />
+            </Link>
+            
         </div>
         <div>
-            <img src={navlogo5} alt="" />
+            <Link className='link' to={"/product"}>
+                <img src={navlogo5} alt="" />
+            </Link>
+            
         </div>
         <div>
-            <img src={navlogo6} alt="" />
+            <Link className='link' to={"/product"}>
+                <img src={navlogo6} alt="" />
+            </Link>
+            
         </div>
         <div>
-            <img className='mha' src={navlogo7} alt="" />
+            <Link className='link' to={"/product"}>
+                <img className='mha' src={navlogo7} alt="" />
+            </Link>   
         </div>
         <div>
-            <img src={navlogo8} alt="" />
+            <Link className='link' to={"/product"}>
+                <img src={navlogo8} alt="" />
+            </Link>    
         </div>
         <div>
-            <img src={navlogo10} alt="" />
+            <Link className='link' to={"/product"}>
+                <img src={navlogo10} alt="" />
+            </Link> 
         </div>
     </nav>
   )
