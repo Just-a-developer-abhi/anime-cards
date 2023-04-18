@@ -10,6 +10,7 @@ const Navbar = () => {
                 Logo
               </Link>
           </div>
+
           <div className="mid">
               <div>
                 <Link to={"/"}>
@@ -17,23 +18,38 @@ const Navbar = () => {
                 </Link>
               </div>
               <div>
-                <Link to={"/"}>
+                <Link to={"/sale"}>
                     Sale
                 </Link>
               </div>
               <div>
-                <Link to={"/"}>
+                <Link to={"/about"}>
                     About Us
                 </Link>
               </div>
               <div>
-                <Link to={"/"}>
+                <Link to={"/contact"}>
                     Contact US
                 </Link>
               </div>  
           </div>
-          <div className="right">
 
+          <div className="right">
+              <div>
+                <Link to={"/wishlist"}>
+                    Wishlist
+                </Link>
+              </div> 
+              <div>
+                <Link to={"/wishlist"}>
+                    Cart
+                </Link>
+              </div> 
+              <div>
+                <Link to={"/wishlist"}>
+                    Login/Signup
+                </Link>
+              </div> 
           </div>
          
           
