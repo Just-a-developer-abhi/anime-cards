@@ -23,7 +23,7 @@ const Home = () => {
         <Carousel className='slides'
         autoPlay
         infiniteLoop 
-        interval={2000} 
+        interval={4000} 
         showThumbs={false} 
         showStatus={false}
         showArrows={false}>
@@ -64,7 +64,7 @@ const Home = () => {
         <Carousel className='slide_two'
         autoPlay
         infiniteLoop 
-        interval={2000} 
+        interval={5000} 
         showThumbs={false} 
         showStatus={false}
         showArrows={false}

@@ -8,6 +8,7 @@ import './Styles/Navbar.scss';
 import './Styles/Navbar2.scss';
 import './Styles/Home.scss';
 import './Styles/Product.scss';
+import './Styles/Card.scss';
 
 function App() {
   return (

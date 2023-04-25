@@ -1,0 +1,12 @@
+.productCard{
+    background-color: black;
+    display: flex;  
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+
+    >.card_row{
+        background-color: blue;
+        width: 30%;
+    }
+}

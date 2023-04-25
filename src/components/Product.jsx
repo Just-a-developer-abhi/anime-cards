@@ -1,17 +1,15 @@
-import React from 'react'
-import shoes from '../assets/shoes.png'
+import React, { useState } from 'react'
+import Card from '../components/Card'
+import Productdata from '../Data/ProductData'
 
 const Product = () => {
-  return (
-    <div className='product'>
-        <div className="container">
-            <div className="card">
-                <div className="imgBx">
-                    <img src={shoes} alt="shoes" />
-                </div>
-            </div>
-        </div>
+    const [productData, setProductData] = useState(Productdata);
 
+  return (
+    <div className='productCard'>
+        <div className="card_row">
+            <Card productData={productData}/>
+        </div>     
     </div>
   )
 }

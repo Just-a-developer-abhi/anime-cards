@@ -1,9 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import logo from '../assets/mast.png';
+import wishlist from '../assets/wishlist1.png';
+import cart from '../assets/cart1.png';
+import profile from '../assets/profile.png';
+import search from '../assets/search.png';
 const Navbar = () => {
   return (
-    <nav>
+    <nav className='navbar'>
           <div className="left">
               <Link className='logo_link' to={"/"}>
                 {/* <img src={logo} alt="logo" /> */}
@@ -14,40 +18,45 @@ const Navbar = () => {
           <div className="mid">
               <div>
                 <Link to={"/"}>
-                    Home
+                    <h4 className='mid_heading' >Home</h4>
                 </Link>
               </div>
               <div>
                 <Link to={"/sale"}>
-                    Sale
+                    <h4 className='mid_heading'>Sale</h4>
                 </Link>
               </div>
               <div>
                 <Link to={"/about"}>
-                    About Us
+                   <h4 className='mid_heading'>About US</h4>
                 </Link>
               </div>
               <div>
                 <Link to={"/contact"}>
-                    Contact US
+                    <h4 className='mid_heading'>Contact Us</h4>
                 </Link>
               </div>  
           </div>
 
           <div className="right">
               <div>
-                <Link to={"/wishlist"}>
-                    Wishlist
+                <Link className='link1' to={"/wishlist"}>
+                    <img className='right_image' src={search} alt="" />
                 </Link>
               </div> 
               <div>
-                <Link to={"/wishlist"}>
-                    Cart
+                <Link className='link1' to={"/wishlist"}>
+                    <img className='right_image' src={wishlist} alt="" />
                 </Link>
               </div> 
               <div>
-                <Link to={"/wishlist"}>
-                    Login/Signup
+                <Link className='link1' to={"/cart"}>
+                    <img className='right_image' src={cart} alt="" />
+                </Link>
+              </div> 
+              <div>
+                <Link className='link1' to={"/profile"}>
+                    <img className='right_image' src={profile} alt="" />
                 </Link>
               </div> 
           </div>
