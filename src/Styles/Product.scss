@@ -1,12 +1,14 @@
 .productCard{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     display: flex;  
     flex-wrap: wrap; 
     justify-content: center;
     align-items: center;
 
     >.card_row{
+        display: flex;
+        align-items: center;
         background-color: blue;
-        width: 30%;
+        width: 80%;
     }
 }

@@ -7,24 +7,27 @@
 }
 .product
 {
+    background-color: rgb(10, 1, 1);
+    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     min-height: 100vh;
 }
 .container
 {
+    left: 3%;
     position: relative;
     display: flex;
-    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
 }
 .container .card {
   margin: 1em;
   display: flex;
-    
   position: relative;
-  width: 320px;
-  height: 450px;
+  width: 250px;
+  height: 400px;
   background: #232323;
   border-radius: 20px;
   overflow: hidden; 
@@ -47,11 +50,11 @@ transition: 0.5s ease-in-out;
 }
 
 .container .card:after {
-    content: 'Nike';
+    content: 'ANIME';
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: -20%;
-    font-size: 12em;
+    font-size: 6em;
     font-weight: 800;
     font-style: italic;
     color: rgba(255,255, 255,0.04);
@@ -74,7 +77,6 @@ transition: 0.5s ease-in-out;
     
 
 }
-
 .container .card .imgBx img{
     position: absolute;
     width: 100%;
@@ -153,7 +155,7 @@ border-radius: 4px;
 }
 .container .card .contentBx .color span 
 {
-    width: 100px;
+    width: 90px;
     height: 25px;
     background: #ff0;
     border-radius: 10px;
@@ -162,15 +164,12 @@ border-radius: 4px;
 }
 .container .card .contentBx .color span:nth-child(2) 
 {
+    text-decoration: line-through;
     background: #dcebc2;
 }
 .container .card .contentBx .color span:nth-child(3) 
 {
-    background: #03a9f4;
-}
-.container .card .contentBx .color span:nth-child(4) 
-{
-    background: #e91e63;
+    background: #dcebc2;
 }
 .container .card .contentBx a
 {

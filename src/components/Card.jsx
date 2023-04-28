@@ -1,3 +1,4 @@
+
 import React from 'react'
 import shoes from '../assets/shoes.png'
 
@@ -9,11 +10,12 @@ const Card = ({productData}) => {
     <div className='product'>
     {productData.map((currentElem)=>{
          return (
-           <>   
+           <>  
+           
         <div className="container" key={currentElem.id}>
             <div className="card">
                 <div className="imgBx">
-                    <img src={currentElem.image} alt="shoes" />
+                    <img src={currentElem.image} alt="item" />
                 </div>
                 <div className="contentBx">
                   <h2>{currentElem.name}</h2>
@@ -27,6 +29,7 @@ const Card = ({productData}) => {
                   <div className="color">
                     <h3>Price :</h3>
                     <span>{currentElem.price}</span>
+                    <span>{currentElem.discounted_price}</span>
                   </div>
                   <a href="#">Buy Now</a>
                 </div>
