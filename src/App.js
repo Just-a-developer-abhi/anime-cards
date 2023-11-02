@@ -9,15 +9,19 @@ import './Styles/Navbar2.scss';
 import './Styles/Home.scss';
 import './Styles/Product.scss';
 import './Styles/Card.scss';
+import ProductBar from "./components/ProductBar";
+import Productdata from './Data/ProductData'
 
 function App() {
+  const [productData, setProductData] = useState(Productdata);
+  
   return (
     <Router>
       <Navbar/>
       <Navbar2/>
        
       <Routes>
-          <Route path="/product" element={<Product/>}/>
+          <Route path="/product" element={<Product productData={Productdata} index={0}/>}/>
           <Route path="/" element={<Home/>}/>
       </Routes>
       

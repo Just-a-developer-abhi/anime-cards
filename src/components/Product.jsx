@@ -2,18 +2,19 @@ import { Grid } from '@material-ui/core';
 import React, { useState } from 'react'
 import Card from '../components/Card'
 import Productdata from '../Data/ProductData'
-import CharacterNav from './CharacterNav';
 
-const Product = ({productData}) => {
-    // const [productData, setProductData] = useState(Productdata);
+const Product = ({productData, index}) => {
+  //  const [productData, setProductData] = useState(Productdata);
 
   return (
     <div className='productCard'>
+      {productData[index].map(item=> (
         <div className="card_row">
-            <Card productData={productData}/>
-        </div>     
+            <Card productData={item}/>
+        </div>  
+      ))}   
     </div>
-  )
+   )
 }
 
 export default Product

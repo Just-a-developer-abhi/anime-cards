@@ -18,48 +18,67 @@ import Product from './Product'
 //new change
 //change 2
 const Navbar2 = () => {
-
-    const [productData, setProductData] = useState(Productdata);
-    const handleButton = (animeName) =>{
-        const updatedList = Productdata.filter((currentElement) => {
-        return currentElement.anime_name === animeName;
-    });
-        setProductData(updatedList);
-    };
+    const[active, SetActive]= useState("");
     
 
   return (
       <>
     <nav className='navbar_two'>
         <div>
-             <img src={navlogo1} alt="" onClick={()=>handleButton("Naruto")}/>
+            <Link className='link' to={"/product"} onClick={()=> SetActive("Naruto")}>
+                <img src={navlogo1} alt=""/>
+            </Link>
+             
+        </div>
+        <div >
+            <Link className='link' to={"/product"}>
+                <img src={navlogo2} alt="" />
+            </Link>
+             
         </div>
         <div>
-             <img src={navlogo2} alt="" onClick={()=>handleButton("AOT")}/>
+            <Link className='link' to={"/product"}>
+                <img src={navlogo3} alt=""/>
+            </Link>
+            
         </div>
         <div>
-            <img src={navlogo3} alt="" onClick={()=>handleButton("Black Clover")}/>
+            <Link className='link' to={"/product"}>
+                <img src={navlogo4} alt=""/>
+            </Link>
+            
         </div>
         <div>
-            <img src={navlogo4} alt="" onClick={()=>handleButton("Death Note")}/>
+            <Link className='link' to={"/product"}>
+                <img src={navlogo5} alt=""/>
+            </Link>
+            
         </div>
         <div>
-            <img src={navlogo5} alt="" onClick={()=>handleButton("Demon Slayer")}/>
+            <Link className='link' to={"/product"}>
+                <img src={navlogo6} alt=""/>
+            </Link>
+             
         </div>
         <div>
-             <img src={navlogo6} alt="" onClick={()=>handleButton("Jujutsu Kaisen")}/>
+            <Link className='link' to={"/product"}>
+                <img className='mha' src={navlogo7} alt="" />
+            </Link>
+             
+        </div>
+        <div >
+            <Link className='link' to={"/product"}>
+                 <img src={navlogo8} alt=""/>
+            </Link>
+               
         </div>
         <div>
-             <img className='mha' src={navlogo7} alt="" onClick={()=>handleButton("MHA")}/>
-        </div>
-        <div>
-                <img src={navlogo8} alt="" onClick={()=>handleButton("OnePiece")}/>
-        </div>
-        <div>
-                <img src={navlogo10} alt="" onClick={()=>handleButton("Vinland Saga")}/>
+            <Link className='link' to={"/product"}>
+                <img src={navlogo10} alt=""/>
+            </Link>
+                
         </div>
     </nav>
-    <Product productData={productData}/>
     </>
   )
 }
